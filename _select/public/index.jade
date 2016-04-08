@@ -1,16 +1,19 @@
 .container
 img(src= "aim.jpg",width="100%").round
 .container
+    br
     .row
         .col-md-3
         .col-md-6
             .center.h4
                 |Select Interiors Limited is one of the UK's most accomplished specialist contractors, with a reputation for delivering some of the most demanding and complex projects within our industry.
+    br
     .row
         .col-md-2
         .col-md-8        
             .center.h5
                 |The needs of our clients and the level of sector expertise they have come to rely upon from Select Interiors remains the key driver for our business. By placing this strategy at the forefront of our business development we have established ourselves as the contractor of choice for some of the industry's most prestigious clients, developers and construction firms.
+    br
 .container-fluid.gray
     br
     .row
@@ -36,8 +39,8 @@ img(src= "aim.jpg",width="100%").round
     br
 .container-fluid.blue
     .row
-        .col-md-2
-        .col-md-3   
+        .col-xs-2
+        .col-xs-3   
             .h1
                 |CONTACT US
                 br
@@ -57,16 +60,19 @@ img(src= "aim.jpg",width="100%").round
                 br
                 |CM17 0AW
             br
-        .col-md-1
-        .col-md-5
+        .col-xs-1
+        .col-xs-5
             br
             br
             br
-            .h5
+            .h5.wrap
                 |Tel: 01279 421474
                 br
                 |Email: reception@selectinteriorslimited.com
             .row
+                .col-md-6
+                    form
+                        textarea(placeholder="Message")
                 .col-md-6
                     form
                         input(type="text",placeholder="Name")
@@ -74,9 +80,10 @@ img(src= "aim.jpg",width="100%").round
                         input(type="text",placeholder="Email")
                         br
                         input(type="text",placeholder="Subject")
-                .col-md-6
-                    form
-                        textarea(placeholder="Message")
+                        br
+                        input(value="Submit",type="button")
+                br
+        .col-md-1
 br
 br
 
