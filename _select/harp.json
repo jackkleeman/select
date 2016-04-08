@@ -1,6 +1,6 @@
 {
   "globals": {
-    "baseUrl": "/select",
+    "baseUrl": "",
     "name": "Bootstrap boilerplate for Harp"
   }
 }
