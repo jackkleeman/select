@@ -1,0 +1,45 @@
+.container-fluid
+    .row
+        #myCarousel.carousel.slide(data-ride='carousel',data-interval=3000)
+                  ol.carousel-indicators
+                    li.active(data-target='#myCarousel', data-slide-to='0')
+                    |                     
+                    li(data-target='#myCarousel', data-slide-to='1')
+                    |                     
+                    li(data-target='#myCarousel', data-slide-to='2')
+                  // Wrapper for slides
+                  .carousel-inner(role='listbox')
+                    .item.active
+                      img(src='images/panpenlarge1.jpg',width="100%")
+                    |                     
+                    .item
+                      img(src='images/panpenlarge2.jpg',width="100%")
+                    |                     
+                    .item
+                      img(src='images/panpenlarge3.jpg',width="100%")
+    br
+    .center
+        h1
+            |Ballymore
+        br
+        br
+        |London City Island
+        br
+        br
+        b
+            i 
+                |Metal Stud Partitioning - Drylining - MF Ceilings
+        br
+        br
+        |214 Luxury Apartments/Penthouses
+        br
+        br
+        |Main Contractor: Ballymore Group
+        br
+        br
+        |Contract Value: £2,500,000.00 
+        br
+        br
+        h3
+            a(href='projects')
+                |Back to Projects
