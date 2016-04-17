@@ -1,0 +1,87 @@
+script(type='text/javascript').
+    document.getElementById("about").style.color = '#5e88e3';
+
+.container-fluid.blue
+    .col-md-1
+    .col-md-10
+        .center
+            h3.
+                Select Interiors Limited is one of the UK's leading drylining & SFS specialist contractors, with a reputation for delivering some of the most demanding and complex projects within our industry. 
+            p.
+                The needs of our clients and the level of sector expertise they have come to rely upon from Select Interiors remains the key driver for our business. By placing this strategy at the forefront of our business development we have established ourselves as the contractor of choice for some of the industry's most prestigious clients, developers and construction firms.
+            br
+            p.
+                Through trading continuously for over 25 years Select Interiors have gained a wealth of experience in drylining system solutions, estimating and value engineering. Our team of fully trained Managers and Tradesman are capable of delivering a fast programme using innovative and efficient methods of working. We can guarantee to provide the highest level of quality for the most competitve price whilst maintaning impeccable standards of Health and Safety.
+            br
+.container-fluid
+    .col-md-1
+    .col-md-10
+        .center
+            h2 Our Clients
+            br
+            br
+            br
+            br
+.container-fluid.gray
+    br
+    .row
+        .col-md-1
+        .col-md-3
+                img#icon1(src='images/tree.png',width='200vw',onclick='iconChange(1)').icon
+        .col-md-4
+            .center
+                img#icon2(src='images/hardhat.png',width='200vw',onclick='iconChange(2)').icon
+        .col-md-3
+            .rightalign
+                img#icon3(src='images/tick.png',width='200vw',onclick='iconChange(3)').icon
+    br
+    #envir.row
+        .col-md-1
+        .col-md-10
+
+            h3 Environmental Policy
+            p.
+                Select Interiors Limited recognises that its operations and activities impact on the localised environment in a number of ways and as such we are committed to continually reducing these environmental impacts. The overall objective will be to develop the business having full regard to the environment and taking into account the views of all affected interests. To this end Select Interiors will:
+            ul
+                li Meet and where possible exceed all relevant statutory legislation.
+                li Assess in advance where possible, the environmental effects of any new development and adjust the company's plans accordingly.
+                li Ensure that all employees understand the policy and the environmental impact of the business and carry out any training necessary.
+                li Make efficient use of natural resources by minimising waste and conserving energy and water.
+                li Minimise any disturbance to the environment and to the quality of life of the local communities in which the company operates.
+                li Ensure that all suppliers and sub-contractors are aware of and agree to adhere to this policy
+                li Take due care and attention to prevent nuisance on site.
+                li Endeavour to keep transport use to a minimum and service vehicles regularly to maintain their efficiency.
+                li Reduce consumption of materials and or land.
+                li Use recycled building materials where possible.
+                li Take positive steps to conserve resources, particularly those that are scarce or non-renewable.
+                li Liaise with the local community on matters that may have an impact upon them
+                li Manage its work on site effectively to avoid pollution.
+                li Make use of energy efficient machinery where possible.
+                li Reduce waste and recycle where possible.
+                li Provide the information necessary to enable the company's products to be properly used, stored and disposed of so as to avoid unacceptable effects on man or the environment.
+                li Be committed to continuous improvement and the prevention of pollution.
+            |.................................
+            br
+            |W.F. McSweeney
+            br
+            |Managing Director
+
+
+
+
+
+
+
+
+script(type='text/javascript').
+    document.getElementById("icon1").style.opacity = "1";
+    function iconChange(i) {
+        
+        var array = [1,2,3];
+
+        array.splice(i-1,1);
+        document.getElementById("icon"+i).style.opacity = "1";
+        document.getElementById("icon"+array[0]).style.opacity = "0.5";
+        document.getElementById("icon"+array[1]).style.opacity = "0.5";
+
+    }
