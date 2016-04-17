@@ -9,11 +9,10 @@ script(type='text/javascript').
                 Select Interiors Limited is one of the UK's leading drylining & SFS specialist contractors, with a reputation for delivering some of the most demanding and complex projects within our industry. 
             p.
                 The needs of our clients and the level of sector expertise they have come to rely upon from Select Interiors remains the key driver for our business. By placing this strategy at the forefront of our business development we have established ourselves as the contractor of choice for some of the industry's most prestigious clients, developers and construction firms.
-            br
             p.
                 Through trading continuously for over 25 years Select Interiors have gained a wealth of experience in drylining system solutions, estimating and value engineering. Our team of fully trained Managers and Tradesman are capable of delivering a fast programme using innovative and efficient methods of working. We can guarantee to provide the highest level of quality for the most competitve price whilst maintaning impeccable standards of Health and Safety.
             br
-.container-fluid
+#clients.container-fluid
     .col-md-1
     .col-md-10
         .center
@@ -22,18 +21,21 @@ script(type='text/javascript').
             br
             br
             br
-.container-fluid.gray
+#policies.container-fluid.gray
     br
     .row
-        .col-md-1
-        .col-md-3
-                img#icon1(src='images/tree.png',width='200vw',onclick='iconChange(1)').icon
-        .col-md-4
+        .col-md-1.hidden-xs
+        .col-md-2.col-xs-4
             .center
-                img#icon2(src='images/hardhat.png',width='200vw',onclick='iconChange(2)').icon
-        .col-md-3
-            .rightalign
-                img#icon3(src='images/tick.png',width='200vw',onclick='iconChange(3)').icon
+                img#icon1(src='images/tree.png',width='100%',onclick='iconChange(1)').icon
+        .col-md-2
+        .col-md-2.col-xs-4
+            .center
+                img#icon2(src='images/hardhat.png',width='100%',onclick='iconChange(2)').icon
+        .col-xs-2
+        .col-md-2.col-xs-4
+            .center
+                img#icon3(src='images/tick.png',width='100%',onclick='iconChange(3)').icon
     br
     #envir.row
         .col-md-1
@@ -60,11 +62,43 @@ script(type='text/javascript').
                 li Reduce waste and recycle where possible.
                 li Provide the information necessary to enable the company's products to be properly used, stored and disposed of so as to avoid unacceptable effects on man or the environment.
                 li Be committed to continuous improvement and the prevention of pollution.
+            
+    #safety.row.hidden
+        .col-md-1
+        .col-md-10
+            h3 Health & Safety Policy
+            p.
+                It is the policy of Select Interiors to ensure that all reasonable and practicable measures are taken to ensure the health and safety of all its employees, the general public and any other person who may be adversely affected by the Company's operations.
+            p.
+                Select Interiors carries out many operations where safety must be a prime consideration and where the full satisfaction of legal requirements may not necessarily be sufficient. Therefore all employees who authorise work to be carried out at any time must ensure that all aspects of health and safety are taken into consideration fully when formulating their instructions.
+            p.
+                Suitable and adequate measures will be taken to safeguard any person, plant, equipment, property, material or product likely to be exposed to any known or suspected hazards associated with or arising out of the processes, tasks or operations being undertaken.
+            p.
+                The company will take into account, at tendering stage, those factors which help to eliminate injury, damage and waste. This will include the provision of adequate funding and resources to enable these policy requirements to be carried out.
+            p.
+                Select Interiors will ensure that adequate facilities exist for effective consultation on matters of health and safety between management and employees' representatives in its effort to reduce and control accidents, unsafe or unhealthy situations. 
+            p.
+                Select Interiors undertakes to provide such information, instruction and training as is necessary to ensure, so far as is reasonably practicable, the health and safety at work of its employees, and any special needs of i.e. new and expectant mothers and young people.
+    #quality.row.hidden
+        .col-md-1
+        .col-md-10
+            h3 Quality Statement
+            p.
+                Select Interiors Ltd. is proud of the reputation it has gained as a quality sub contractor. The company operates in the Specialist Sector of the Interior Finishing Industry placing particular emphasis on expertise, capability, reliability and the continual review of management and quality standards.
+            p.
+                As part of the Company’s continuing development in pursuit of excellence the objective is to maintain a management quality assurance system based upon the applicable requirements of ISO 9001 1987 and in compliance with statutory and contractual obligations.
+            p.
+                Our committed aim is to get it right first time, on time; every time and we firmly believe that quality and service, upon which the foundations of this Company are based, remain uppermost.
+    .row
+        .col-md-1
+        .col-md-10
             |.................................
             br
             |W.F. McSweeney
             br
             |Managing Director
+            br
+            br
 
 
 
@@ -78,10 +112,14 @@ script(type='text/javascript').
     function iconChange(i) {
         
         var array = [1,2,3];
-
+        var names = ["#envir","#safety","#quality"];
         array.splice(i-1,1);
+        var click = names.splice(i-1,1);
         document.getElementById("icon"+i).style.opacity = "1";
+        console.log(click);
+        $(click[0]).removeClass("hidden");
         document.getElementById("icon"+array[0]).style.opacity = "0.5";
+        $(names[0]).addClass("hidden");
         document.getElementById("icon"+array[1]).style.opacity = "0.5";
-
+        $(names[1]).addClass("hidden");
     }
