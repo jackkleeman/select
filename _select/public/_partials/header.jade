@@ -2,10 +2,12 @@
     .row
         .col-md-1.col-sm-1.hidden-xs
         .col-md-5.col-sm-8.col-xs-12
-            img(src= "images/select.png",width="60%").contain
+            a(href='../')
+                img(src= "images/select.png",width="60%").contain
+            
             .small
                 br
-            .row.15px
+            .row.menuall.menu
                 .col-md-2.col-xs-2
                     .center
                         a(href='index')#home.btn.btn-link.menu
@@ -17,7 +19,6 @@
                                     a#dropdownMenu1.btn.btn-link.menu.dropdown-toggle(href='about', type='button', data-hover='dropdown',data-hoverDelay=10, aria-haspopup='true', aria-expanded='true')
                                         #about 
                                             |About
-                                            span.caret
                                     ul.dropdown-menu(aria-labelledby='dropdownMenu1')
                                         li
                                           a(href='about#clients') Clients
