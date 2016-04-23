@@ -48,18 +48,12 @@ script(type='text/javascript').
         br
         .container-fluid.gray
             br
-            .row
-                .h2.center
-                    |PROJECTS
-            br
-            .row
-                .col-md-1
-                .col-md-10
-                    img(src= "images/proj.jpg",width="100%").round.center
-            br
-            .row
-                .h3.center
-                    |View All
+            .center
+              .h2
+                |PROJECTS
+                !=partial("_partials/accordian")
+              .h3
+                a(href='projects') View All
             br
         .container
             br
@@ -74,4 +68,5 @@ script(type='text/javascript').
                 br
                 br
                 br
+        !=partial('_partials/tel')
         !=partial("_partials/footer")
