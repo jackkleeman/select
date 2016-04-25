@@ -1,14 +1,13 @@
 script(type='text/javascript').
     document.getElementById("contact").style.color = '#5e88e3';
-.container-fluid.gray
-    .col-md-1
+.container-fluid.gray.nopadding
+    .col-md-1.nopadding
     .col-md-2.col-xs-4
         br
         ul(style="list-style-type:none")
-            li
+            li(style="padding-bottom:10px")
                 b
                     |Head Office
-            br
             li
                 |Select Interiors Limited
             li
@@ -21,30 +20,30 @@ script(type='text/javascript').
                 |Essex
             li
                 |CM17 0AW
-    .col-md-1
+    .col-md-1.nopadding
     .col-xs-8.nopadding
         iframe(
             width="100%"
             height="200vh"
             frameborder="0"
-            style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAN7-ngjoXFOGXxSYuJIGjn_RwT89vC83w&q=Select+Interiors+Limited")
+            style="border:0; margin-bottom:-4px"
+            src="https://www.google.co.uk/maps/embed/v1/place?key=AIzaSyAN7-ngjoXFOGXxSYuJIGjn_RwT89vC83w&q=Select+Interiors+Limited")
 !=partial('_partials/tel')
 .container-fluid
     .col-md-1
     .col-md-10
         .center
-            h1
+            h1(style="margin-bottom:18px")
                 |QUICK ENQUIRY
         .row
             form(action='https://formspree.io/htmlperson@gmail.com', method='POST')
-                .col-md-6.nopadding
+                .col-md-6
                         .form-group
                             input(type="text",placeholder="Name", name='name').form-control
                             input(type="text",placeholder="Email", name='email').form-control
                             input(type="text",placeholder="Phone", name='tel').form-control
                             input(type="text",placeholder="Subject", name='subject').form-control
-                .col-md-6.nopadding
+                .col-md-6
                         .form-group
                             textarea(placeholder="Message",style="height:148px",name='message').form-control
                             button.btn.btn-link(type="submit", style="float:right")
