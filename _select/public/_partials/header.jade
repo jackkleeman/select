@@ -1,17 +1,18 @@
 .container-fluid
     .row
-        .col-md-1.col-sm-1.hidden-xs
-        .col-md-5.col-sm-8.col-xs-12
-            a(href='../')
-                img(src= "images/select.png",width="60%",style="padding-bottom: 8px;").contain
-            .row.menuall.menu
-                .col-md-2.col-xs-2
+        .col-md-1.hidden-xs
+        .col-md-10.col-xs-11
+            .row
+                .col-md-3.col-xs-2.nopadding
+                    a(href='../')
+                        img(src= "images/select.png",width="100%",style="margin-top: -6px;").hidden-xs.hidden-sm
+                        img(src= "images/select.png",width="130%",style="margin-bottom: -5px;").hidden-md.hidden-lg
+                .col-md-1.col-xs-2.nopadding
                     .center
                         a(href='index')#home.btn.btn-link.menu
                                 |Home
-                .col-md-2.col-xs-2
+                .col-md-1.col-xs-2.nopadding
                     .center
-                        .menu
                             .btn-group
                                     a#dropdownMenu1.btn.btn-link.menu.dropdown-toggle(href='about', type='button', data-hover='dropdown',data-hoverDelay=10, aria-haspopup='true', aria-expanded='true')
                                         #about 
@@ -22,18 +23,19 @@
                                         li
                                           a(href='about#policies') Policies
 
-                .col-md-2.col-xs-2
+                .col-md-1.col-xs-2.nopadding
                     .center
                             a(href='projects')#projects.btn.btn-link.menu
                                 |Projects
-                .col-md-2.col-xs-2
+                .col-md-1.col-xs-2.nopadding
                     .center
                         a(href='index')#sectors.btn.btn-link.menu
                                 |Sectors
-                .col-md-2.col-xs-2
+                .col-md-1.col-xs-2.nopadding
                     .center
                         a(href='contact')#contact.btn.btn-link.menu
                                 |Contact
+
 br
 
 
