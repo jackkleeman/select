@@ -120,9 +120,20 @@ body{
 }
 .menu{
   color: #313131; 
-  font-size: 3vh;
+  font-size: 2.4vh;
   font-weight: bold;
 }
+@media (min-width: @screen-sm-min) {
+  .menu{
+    font-size: 2.6vh;
+  }
+}
+@media (min-width: @screen-md-min) {
+  .menu{
+    font-size: 3.2vh;
+  }
+}
+
 .plus{
 background-image: url(../images/bluecross.jpg);
 background-size: cover;
